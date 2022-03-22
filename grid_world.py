@@ -21,6 +21,9 @@ class Grid:
     def all_states(self):
         return set(self.actions.keys()) | set(self.rewards.keys())
 
+    def game_over(self, state):
+        return self.actions.get(state) is None
+
 
 def standard_grid(step_cost=None):
     # define a grid that describes the reward for arriving at each state

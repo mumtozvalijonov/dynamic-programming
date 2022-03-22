@@ -1,5 +1,5 @@
-from agent import Agent
 from grid_world import standard_grid
+from algorithms.value_iteration.agent import Agent
 
 
 if __name__ == '__main__':
